@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Rini Iakupov](https://up.htmlacademy.ru/htmlcss/26/user/1149589).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Мулярчик](https://htmlacademy.ru/profile/ivanmuliarchyk).
 
 ---
 
