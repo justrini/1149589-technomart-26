@@ -20,9 +20,9 @@
           </p>
         </form>
         <ul>
-          <li><a href="">Закладки</a></li>
-          <li><a href="">Корзина</a></li>
-          <li><a href="">Оформить заказ</a></li>
+          <li><a href="#">Закладки</a></li>
+          <li><a href="#">Корзина</a></li>
+          <li><a href="#">Оформить заказ</a></li>
         </ul>
         <p>Интернет-магазин
          строительных материалов
@@ -31,17 +31,25 @@
 
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18</p>
         <ul>
-          <li><button type="button">Войти</button></li>
-          <li><button type="button">Регистрация</button></li>
+          <li>
+            <a href="#">
+              Войти
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Регистрация
+            </a>
+          </li>
         </ul>
         <ul>
-         <li><a href="">Главная</a></li>
-         <li><a href="">Компания</a></li>
+         <li><a href="#">Главная</a></li>
+         <li><a href="#">Компания</a></li>
          <li><a href="catalog.html">Каталог</a></li>
-         <li><a href="">Новости</a></li>
-         <li><a href="">Спецпредложения</a></li>
-         <li><a href="">Доставка</a></li>
-         <li><a href="">Контакты</a></li>
+         <li><a href="#">Новости</a></li>
+         <li><a href="#">Спецпредложения</a></li>
+         <li><a href="#">Доставка</a></li>
+         <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -59,14 +67,13 @@
              <li>Автотрейдинг</li>
              <li>ЖелДорЭкспедиция</li>
            </ul>
-          <a href="">ПОДРОБНЕЕ О КОМПАНИИ</a>
+          <a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
         </div>
         <div>
             <h3>КОНТАКТЫ</h3>
            <p>Вы можете забрать товар сами
              заехав в наш офис:</p>
-             <img src="img/map.png">
-            <!--тут должна быть карта, но она показана как popup,  а в тз сказано не делать popup'ы-->
+             <p><img src="img/map.png" width="" height="" alt="офис магазина по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18"></p>
             <a href="">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </div>
       </div>
@@ -80,23 +87,23 @@
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18
          +7(812)555-05-55</p>
         <ul>
-         <li><a href="">Компания</a></li>
-         <li><a href="">Новости</a></li>
+         <li><a href="#">Компания</a></li>
+         <li><a href="#">Новости</a></li>
          <li><a href="catalog.html">Каталог</a></li>
-         <li><a href="">Доставка</a></li>
-         <li><a href="">Контакты</a></li>
-         <li><a href="">Материалы</a></li>
-         <li><a href="">Техника</a></li>
-         <li><a href="">Инструменты</a></li>
-         <li><a href="">Спецпредложение</a></li>
+         <li><a href="#">Доставка</a></li>
+         <li><a href="#">Контакты</a></li>
+         <li><a href="#">Материалы</a></li>
+         <li><a href="#">Техника</a></li>
+         <li><a href="#">Инструменты</a></li>
+         <li><a href="#">Спецпредложение</a></li>
         </ul>
         <p>&#169; 2010-2019 Компания  &#60;&#60;ТЕХНОМАРТ&#62;&#62;
         Все права защищены</p>
         <div>
           <ul>
-            <li><a href="vk.com">VK</a></li>
-            <li><a href="facebook.com">FB</a></li>
-            <li><a href="instagram.com">Insta</a></li>
+            <li><a href="vk.com" aria-label="Магазин Техномарт в Вконтакте">VK</a></li>
+            <li><a href="facebook.com" aria-label="Магазин Техномарт в Фэйсбук">FB</a></li>
+            <li><a href="instagram.com" aria-label="Магазин Техномарт в Инстаграм">Insta</a></li>
           </ul>
         </div>
         <p>Обратная связь
@@ -105,5 +112,57 @@
         htmlacademy.ru</p>
     </nav>
   </footer>
+  <section>
+     <h2 class="visually-hidden">Свяжитесь с нами</h2>
+              <form action="#" method="post">
+                <p>
+                  <label for="form-name">
+                       Ваше имя:
+                   </label>
+                    <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                  <label for="form-email">
+                    Ваш e-mail:
+                  </label>
+                   <input id="form-email" type="text" name="email" placeholder="email@example.com">
+                </p>
+                <p>
+                  <label for="form-fillform">
+                   Текст письма:
+                  </label>
+                <input id="form-fillform" type="text" name="fillform" placeholder="В свободной форме">
+                </p>
+                <button type="submit">Отправить</button>
+              </form>
+            </section>
+    <section>
+      <h2 class="visually-hidden">Личный кабинет</h2>
+      <p>Введите свой логин и пароль</p>
+      <form action="#" method="post">
+        <p>
+          <label for="user-login">Логин</label>
+          <input id="user-login" type="text" name="login" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-password">Пароль</label>
+          <input id="user-password" type="text" name="password" placeholder="••••••••">
+        </p>
+        <p>
+          <label>
+          <input type="checkbox" name="remember">
+          Запомните меня</label>
+           <a href="#">
+            Я забыл пароль
+           </a>
+        </p>
+      </form>
+      <button type="submit">
+        Войти
+      </button>
+      <button type="button">
+        Закрыть
+      </button>
+    </section>
    </body>
 </html>
