@@ -1,1 +1,28 @@
-
+@font-face {
+  font-family: cuprumRegular;
+  src: url("../fonts/web/cuprum.woff2") format("woff2"),
+      url("../fonts/web/cuprum.woff") format("woff");
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+  font-family: cuprumItalic;
+  src: url("../fonts/web/cuprumitalic.woff2") format("woff2"),
+      url("../fonts/web/cuprumitalic.woff") format("woff");
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+  font-family: cuprumBold;
+  src: url("../fonts/web/cuprumbold.woff2") format("woff2"),
+      url("../fonts/web/cuprumbold.woff") format("woff");
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+  font-family: cuprumBoldItalic;
+  src: url("../fonts/web/cuprumbolditalic.woff2.woff2") format("woff2"),
+      url("../fonts/web/cuprumbolditalic.woff.woff") format("woff");
+ font-weight: normal;
+ font-style: normal;
+}
