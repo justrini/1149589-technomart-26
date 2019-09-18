@@ -5,13 +5,14 @@
     <meta name="keywords" content="инструмент, материалы, перфоратор">
     <meta name="description" content="Лучший магазин для строителей, самые выгодные цены на перфолраторы.">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <h1>Магазин Техномарт</h1>
-      <nav class="main-navigation">
-        <a class="main-logo">
+      <nav class="main-nav">
+        <a>
           <img src="img/tech-logo.png" width="220" height="47" alt="Логотип Техгомарта">
         </a>
         <form>
@@ -21,28 +22,30 @@
           </p>
         </form>
         <ul>
-          <li><a href="#">Закладки</a></li>
-          <li><a href="#">Корзина</a></li>
-          <li><a href="#">Оформить заказ</a></li>
+          <li class="top-btn"><a href="#">Закладки</a></li>
+          <li class="top-btn"><a href="#">Корзина</a></li>
+          <li class="order-btn"><a href="#">Оформить заказ</a></li>
         </ul>
-        <p>Интернет-магазин
-         строительных материалов
-         и инструментов</p>
-        <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+    <div class="main-header-bg">
+      <h1 class="main-title">Интернет-магазин
+       строительных материалов
+       и инструментов</h1>
+      <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
 
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18</p>
-        <ul>
-          <li>
-            <a href="#">
-              Войти
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Регистрация
-            </a>
-          </li>
-        </ul>
+      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18</p>
+      <ul>
+        <li>
+          <a href="#">
+            Войти
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Регистрация
+          </a>
+        </li>
+      </ul>
+      <nav class="nav-menu">
         <ul>
          <li><a href="#">Главная</a></li>
          <li><a href="#">Компания</a></li>
@@ -52,7 +55,8 @@
          <li><a href="#">Доставка</a></li>
          <li><a href="#">Контакты</a></li>
         </ul>
-      </nav>
+     </nav>
+    </div>
     </header>
   <main>
     <section>
@@ -113,7 +117,8 @@
         htmlacademy.ru</p>
     </nav>
   </footer>
-  <section>
+   <!--
+     <section>
      <h2 class="visually-hidden">Свяжитесь с нами</h2>
               <form action="https://echo.htmlacademy.ru" method="post">
                 <p>
@@ -164,5 +169,6 @@
       </button>
        </form>
     </section>
+   -->
    </body>
 </html>

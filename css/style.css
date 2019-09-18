@@ -1,0 +1,50 @@
+/*font-family: 'Cuprum', sans-serif;
+font-family: 'PT Sans', sans-serif;*/
+body {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+}
+.main-title {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.top-btn {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #293449;
+  text-decoration: none;
+}
+
+.nav-menu {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  color: #fff;
+  background-color: #32425c;
+}
+
+/*body font family font size */
+.main-header {
+  margin: 0;
+}
+
+.order-btn {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #63a63e;
+}
+
+.main-header-bg {
+  background-color: #f4f7f9;
+}
