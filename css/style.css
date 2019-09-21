@@ -17,16 +17,85 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.top-line {
+  background-color: #293449;
+}
 .nav-block {
   background-color: #32425c;
-
 }
-.head-btns {
+
+.drill {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.drill-unit {
+  border-style:solid;
+  border-color: #e5e5e5;
+   background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.drill-unit:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-name{
+ font-family: "PTSans", Arial, sans-serif;
+ font-style: bold;
+ font-size:18px;
+ line-height: 20px;
+ color: #000;
+}
+.catalog-item-price {
+  font-family: "PTSans", Arial, sans-serif;
+ font-style: bold;
+ font-size:17px;
+ line-height: 18px;
+ color: #999999;
+}
+
+.item-price-btn{
+  font-family: "PTSans", Arial, sans-serif;
+ font-style: bold;
+ font-size:17px;
+ line-height: 18px;
+ color: #fff;
+ background-color: #ee3643
+}
+
+.filters fieldset{
+  border: none;
+}
+
+label {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size:15px;
+ line-height: 20px;
+ color: #000;
+}
+
+legend {
+ font-family: "PTSans", Arial, sans-serif;
+ font-style: bold;
+ font-size:17px;
+ line-height: 30px;
+ color: #000;
+}
+
+.catalog-list {
   list-style: none;
 }
 
-
-h3 {
+.company{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -95,6 +164,34 @@ h3 {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
+  border-style: solid;
+  border-color: #fff;
+}
+.person {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000;
+  background-color: #fff;
+}
+
+.person-lk {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.main-menu {
+  background-color: #32425c;
+}
+
+.catalog-tree {
+ font-family: "PTSans", Arial, sans-serif;
+ font-size: 13px;
+ line-height: 18px;
+ color: #000;
 }
 
 .head-address {
@@ -129,6 +226,7 @@ h3 {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
+  color: #fff;
   background-color: #63a63e;
 }
 
@@ -178,4 +276,18 @@ h3 {
   font-size: 16px;
   line-height: 18px;
   color: #ffd180;
+}
+.bookmark {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.cart {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  background-color: #ee3643;
 }
