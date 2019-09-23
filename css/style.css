@@ -17,11 +17,21 @@ a {
   text-decoration: none;
 }
 
-ul {
+ul.top-nav-btn,
+ul.social,
+ul.site-navigation1,
+ul.site-navigation,
+ul.head-btns {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
+.search-menu {
+  background: inherit;
+  border:none;
+}
+
 .top-line {
   background-color: #293449;
 }
@@ -122,21 +132,26 @@ legend {
   text-decoration: none;
 }
 
-.top-btn a:hover,
-.top-btn a:focus {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  color: #fff;
+.top-btn:hover,
+.top-btn:focus {
   background-color: #212a3a;
 }
 
-.site-navigation {
-  list-style: none;
+.top-btn:active {
+  color: #999ca1;
+  background-color: #161d29;
 }
+
+/*.site-navigation {
+  list-style: none;
+}*/
 .site-navigation a:hover,
 .site-navigation a:focus {
   background-color: #293449;
+}
+
+.site-navigation a:active {
+  background-color: #1d2739;
 }
 .nav-menu {
   font-family: "Cuprum", Arial, sans-serif;
@@ -150,8 +165,16 @@ legend {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
-  color: #ffffff;
+  color: #000;
 }
+
+.explanation {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size:13px;
+ line-height: 24px;
+ color: #000;
+}
+
 .expedition-list{
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -175,12 +198,25 @@ legend {
   background-color: #fff;
 }
 
+.person:active {
+  color: #c5c5c5,
+}
+
 .person-lk {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
+}
+
+.person-lk:hover,
+.person-lk:focus {
+  color: #ee3643;
+}
+
+.person-lk:active {
+  color: #b7bfc8
 }
 
 .main-menu {
@@ -217,6 +253,10 @@ legend {
 .head-btns a:focus {
   color: #ee3643;
 }
+
+.head-btns a:active {
+  color: #b2b2b2;
+}
 /*body font family font size */
 .main-header {
   margin: 0;
@@ -228,6 +268,16 @@ legend {
   line-height: 18px;
   color: #fff;
   background-color: #63a63e;
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  background-color: #5fbb2d;
+}
+
+.order-btn:active {
+  color: #a8c29a;
+  background-color: #518534;
 }
 
 .main-header-bg {
@@ -248,12 +298,39 @@ legend {
   color: #fff;
 }
 
+.btm-nav:hover,
+.btm-nav:focus {
+  text-decoration: underline;
+}
+
+.btm-nav:active {
+   color:#8b96a4;
+}
+
 .btm-nav1 {
    font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 17px;
   color: #ffd180;
 }
+
+.btm-nav1:hover,
+.btm-nav1:focus {
+  text-decoration: underline;
+}
+
+.btm-nav1:active {
+   color:#998a6e;
+}
+
+.filter-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+}
+
 .underfooter {
   background-color: #293449
 }
