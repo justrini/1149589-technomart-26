@@ -27,6 +27,11 @@ ul.head-btns {
   padding: 0;
 }
 
+.site-navigation {
+  display: flex;
+  justify-content: space-around;
+}
+
 .search-menu {
   background: inherit;
   border:none;
