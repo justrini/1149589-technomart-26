@@ -17,19 +17,25 @@ a {
   text-decoration: none;
 }
 
-ul.top-nav-btn,
+ul.top-nav-list,
 ul.social,
 ul.site-navigation1,
 ul.site-navigation,
-ul.head-btns {
-  list-style-type: none;
+ul.head-btn {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.inner {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
 .site-navigation {
   display: flex;
-  justify-content: space-around;
+  flex-grow:
+
 }
 
 .search-menu {
@@ -37,9 +43,52 @@ ul.head-btns {
   border:none;
 }
 
+.search-form {
+  width: 288px;
+}
+
+.search-form p {
+  margin: 0;
+}
+
 .top-line {
+
   background-color: #293449;
 }
+
+.logo-link {
+  display: block;
+  padding-top:12px;
+  padding-bottom: 11px;
+  font-family: "Cuprum", Arial, sans-serif;
+  text-align: center;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #ee3643;
+   box-shadow: 0 5px 0 0 #b52933;
+   width: 220px;
+
+}
+
+.top-line-wrapper {
+  display: flex;
+}
+
+
+
+.top-nav-list {
+  display: flex;
+}
+
+.head-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-nav-item {
+  width: 150px;
+}
+
 .nav-block {
   background-color: #32425c;
 }
@@ -121,6 +170,10 @@ legend {
   background-color: #32425c;
 }
 .main-title {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 43px;
+  width: 210px;
   font-family: "Cuprum", Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
@@ -129,6 +182,11 @@ legend {
 }
 
 .top-btn {
+  display: block;
+  padding:21px;
+  padding-bottom: 11px;
+  padding-top: 11px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -262,12 +320,17 @@ legend {
 .head-btns a:active {
   color: #b2b2b2;
 }
+
+.head-btn {
+  display: flex;
+}
 /*body font family font size */
 .main-header {
 
 }
 
 .order-btn {
+  display: block;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
