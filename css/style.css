@@ -33,14 +33,28 @@ ul.head-btn {
 }
 
 .site-navigation {
+  width: 940px;
+  height: 60px;
+  background-color: #32425c;
+
   display: flex;
-  flex-grow:
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+
 
 }
 
+.phone-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+
 .search-menu {
-  background: inherit;
-  border:none;
+
 }
 
 .search-form {
@@ -52,7 +66,6 @@ ul.head-btn {
 }
 
 .top-line {
-
   background-color: #293449;
 }
 
@@ -82,7 +95,13 @@ ul.head-btn {
 
 .head-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.head-wrap {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
 }
 
 .top-nav-item {
@@ -205,9 +224,7 @@ legend {
   background-color: #161d29;
 }
 
-/*.site-navigation {
-  list-style: none;
-}*/
+
 .site-navigation a:hover,
 .site-navigation a:focus {
   background-color: #293449;
@@ -222,6 +239,7 @@ legend {
   line-height: 17px;
   color: #ffffff;
   background-color: #32425c;
+
 }
 
 .courier{
@@ -246,6 +264,10 @@ legend {
 }
 
 .phone {
+  display: block;
+  width: 270px;
+
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
@@ -321,8 +343,22 @@ legend {
   color: #b2b2b2;
 }
 
+.login {
+  width: 121px;
+  display: block;
+  padding: 11px 26px 11px 14px;
+  margin-right: 10px;
+}
+
+.reg {
+  width: 150px;
+  display: block;
+  padding: 11px 24px;
+}
+
 .head-btn {
   display: flex;
+
 }
 /*body font family font size */
 .main-header {
@@ -349,7 +385,9 @@ legend {
 }
 
 .main-header-bg {
+  height: 280px;
   background-color: #f4f7f9;
+
 }
 
 .btmbtn {
@@ -436,3 +474,92 @@ legend {
   color: #fff;
   background-color: #ee3643;
 }
+
+
+.popular-items {
+  color: black;
+}
+
+.container-materials {
+  width: 300px;
+  height: 123px;
+
+  background-color: #ffbf47;
+}
+
+.container-instruments {
+  width: 300px;
+  height: 123px;
+
+  background-color: #3bbce3;
+}
+
+.container-tech {
+  width: 300px;
+  height: 123px;
+
+  background-color: #dc91d8;
+}
+
+.container-sale {
+  width: 300px;
+  height: 123px;
+
+  background-color: #8ed78f;
+}
+
+.container-delivery {
+  width: 300px;
+  height: 123px;
+
+  background-color: #ffc047;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
