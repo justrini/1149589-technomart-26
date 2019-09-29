@@ -481,8 +481,12 @@ legend {
 }
 
 .container-materials {
+
   width: 300px;
   height: 123px;
+  order: -6;
+  margin-right: 20px;
+  margin-bottom: 20px;
 
   background-color: #ffbf47;
 }
@@ -490,6 +494,8 @@ legend {
 .container-instruments {
   width: 300px;
   height: 123px;
+  order: -5;
+  margin-right: 20px;
 
   background-color: #3bbce3;
 }
@@ -497,13 +503,15 @@ legend {
 .container-tech {
   width: 300px;
   height: 123px;
-
+order: -4;
   background-color: #dc91d8;
 }
 
 .container-sale {
+  order: -2;
   width: 300px;
   height: 123px;
+  margin-left: 20px;
 
   background-color: #8ed78f;
 }
@@ -511,12 +519,29 @@ legend {
 .container-delivery {
   width: 300px;
   height: 123px;
+  order: -1;
 
   background-color: #ffc047;
 }
 
+.man-drill {
+  background-image: url('../img/Drill-man-baner-.png');
+  background-color: #685c53;
+  width: 620px;
+  order: -3;
+  height: 266px;
 
+}
 
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 59px;
+  padding: 0;
+  border: 940px 410px;
+
+}
 
 
 
