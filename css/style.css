@@ -20,6 +20,7 @@ a {
 ul.top-nav-list,
 ul.social,
 ul.site-navigation1,
+ul.site-navigation2,
 ul.site-navigation,
 ul.head-btn {
   list-style: none;
@@ -109,6 +110,8 @@ align-items: center;
 }
 
 .nav-block {
+  margin-left: 70px;
+
   background-color: #32425c;
 }
 
@@ -188,6 +191,56 @@ legend {
 .footer {
   background-color: #32425c;
 }
+
+.footer-wrapper {
+  display: flex;
+  flex-direction:
+}
+
+.logo-address {
+
+
+}
+
+.site-navigation1
+ {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-content: center;
+width: 550px;
+
+}
+
+
+.site-navigation1 li {
+  padding-top: 39px;
+}
+
+
+
+
+
+.site-navigation2 {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.site-navigation2 li {
+  margin-top: 35px;
+  padding-bottom: 74px;
+}
+
+.footer-address {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+
+
 .main-title {
   padding-top: 50px;
   padding-left: 50px;
@@ -438,13 +491,17 @@ legend {
 }
 
 .underfooter {
+  border: 2px solid black;
   background-color: #293449
+
 }
 .copyright {
+  width: 250px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #fff;
+  border: 1px solid red;
 }
 
 .feedback {
@@ -499,6 +556,19 @@ legend {
   background-color: #ffbf47;
 }
 
+.before-footer {
+  display: flex;
+  height: 536px;
+}
+
+.container-name {
+  margin-top: 0;
+}
+
+.container-name-delivery {
+  margin-top: 20px;
+}
+
 .container-instruments {
   width: 300px;
   height: 123px;
@@ -519,7 +589,7 @@ order: -4;
   order: -2;
   width: 300px;
   height: 123px;
-  margin-left: 20px;
+
 
   background-color: #8ed78f;
 }
@@ -535,6 +605,7 @@ order: -4;
 .man-drill {
   background-image: url('../img/Drill-man-baner-.png');
   background-color: #685c53;
+  margin-right: 20px;
   width: 620px;
   order: -3;
   height: 266px;
@@ -586,6 +657,34 @@ order: -4;
 
 }
 
+.socialvk {
+  width: 40px;
+  height: 40px;
+  background-color: #212a3a;
+  border-radius: 50%;
+  background-image: url(../img/icon-vk.svg);
+}
+
+.under-wrap {
+  display: flex;
+}
+
+.social {
+  display: flex;
+  width: 136px;
+
+}
+
+.back-link {
+  display: flex;
+justify-content: flex-end;
+  width:
+}
+
+.back-link p {
+  border:1px solid red;
+  width: 290px;
+}
 
 
 
