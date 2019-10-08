@@ -28,6 +28,11 @@ ul.head-btn {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .inner {
   max-width: 940px;
   margin: 0 auto;
@@ -149,8 +154,6 @@ align-items: center;
 
 .catalog {
  width: 700px;
- min-height: 1150px;
- border: 1px solid red;
 }
 
 .catalog-wrapper {
@@ -593,6 +596,39 @@ width: 550px;
   background-color: #ffbf47;
 }
 
+.container-materials svg,
+.container-delivery svg {
+position: relative;
+left: 214px;
+bottom: 20px;
+}
+
+.container-instruments svg {
+position: relative;
+left: 195px;
+bottom: 18px;
+}
+
+.container-tech svg {
+  position: relative;
+left: 195px;
+bottom: 18px;
+}
+
+.container-sale svg {
+  position: relative;
+left: 195px;
+bottom: 18px;
+}
+
+.container-delivery svg {
+ position: relative;
+left: 195px;
+bottom: 10px;
+}
+
+
+
 .before-footer {
   display: flex;
   height: 536px;
@@ -677,22 +713,168 @@ order: -4;
 }
 
 .drill-unit {
-  width: 220px;
-  height: 318px;
+   position: relative;
+  display: inline-block;
+  width: 218px;
+  margin-right: 20px;
   margin-bottom: 20px;
+
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+
+  border: 1px solid #ccc;
+}
+
+.drill-unit:nth-child(3n) {
+  margin-right: 0;
+}
+
+..drill-unit {
+  font-size: 0;
+}
+
+..drill-unit {
+  font-size: 16px;
+}
+
+.drill-unit .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.drill-unit .flag-new {
+  background: url(../img/new flag.png) no-repeat 0 0;
+}
+
+.drill-unit .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.drill-unit .actions .buy,
+.drill-unit .actions .bookmark-drill {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.drill-unit .actions .bookmark-drill {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.drill-unit .actions {
+  display: none;
+}
+
+.drill-unit:hover .actions {
+  display: block;
+}
+
+.drill-unit .image {
+  width: 218px;
+  height: 168px;
+}
+
+.drill-unit .image img {
+  max-width: 100%;
+}
+
+.drill-unit .title {
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.drill-unit .catalog-item-price {
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  color: #999;
+  text-decoration: line-through;
+}
+
+
+.drill-unit .item-price-btn {
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+.drill-unit .item-price-btn:after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  width: 0;
+  height: 0;
+
+  border: 19px solid white;
+  border-left-color: #ee3643;
 }
 
 .brands-box {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 220px;
   height: 145px;
-  border: 3px solid black;
+  border: 1px solid #eaeaea;
 }
+
+.brands-box + .brands-box {
+  margin-bottom: 20px;
+}
+
 
 .brands {
   display: flex;
   flex-wrap: wrap;
-  justify-content:
-
+  justify-content: space-between;
 }
 
 .socialvk {
@@ -732,8 +914,29 @@ order: -4;
   min-height: 40px;
 }
 
+.btn-menu {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
 
+  border:1px solid black;
+  padding: 10px 24px;
 
+position: relative;
+left: -30px;
+bottom: 40px;
+
+}
+
+.name-menu {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+
+  padding-left: 22px;
+}
 
 
 
