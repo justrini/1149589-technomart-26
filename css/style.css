@@ -160,7 +160,6 @@ form {
 
 .main-header-bg {
   background-color: #f4f7f9;
-  padding: 47px 0 60px 0;
 }
 
 .head-wrapper {
@@ -171,19 +170,22 @@ form {
 
 .head-wrap {
   display: flex;
-  justify-content:space-between;
+
 
 
 }
 
 .main-title {
-  width: 198px;
+  width: 208px;
   font-family: "Cuprum", Arial, sans-serif;
   font-style: italic;
-  font-size: 13px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing:-0.01em;
   color: #ee3643;
   padding: 2px 50px 0 52px;
+  margin: 0;
+
 
 }
 
@@ -197,9 +199,9 @@ form {
 .phone {
   display: block;
   width: 145px;
-
-  background: url(../img/icon-phone.svg) no-repeat 17px;
-  padding: 10.5px 50px 10.5px 72px;
+  margin-left: 10px;
+  background: url(../img/icon-phone.svg) no-repeat 15px;
+  padding: 10px 50px 10.5px 70px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
@@ -208,49 +210,55 @@ form {
 }
 
 .head-address {
+  margin: 0;
+  margin-left: 8px;
   padding: 4px 0 0 10px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 18px;
   color: #32425c;
 }
 
 .head-btn {
   display: flex;
-  justify-content: flex-end;
-  text-align: center;
-  width: 300px;
-  font-size: 21px;
-  line-height: 18px;
+align-items: center;
 }
 
 .head-btns {
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
-  line-height: 18px;
+  line-height: 21px;
   color: #000000;
   background-color: #ffffff;
-}
-.head-btns a:hover,
-.head-btns a:focus {
-  color: #ee3643;
-}
 
-.head-btns a:active {
-  color: #b2b2b2;
 }
 
 .login {
   display: block;
-  padding: 13px 26px 13px 45px;
-  border: 1px solid black;
+  margin-left: 69px;
+  padding-right: 26px;
+  padding-bottom: 12px;
+  padding-left: 48px;
+  padding-top: 12px;
+  background-color: #fff;
+
+  /*
+  background: url(../img/icon-login.svg) no-repeat 15px;*/
+
+
 }
 
 .reg {
-
   display: block;
-  padding: 13px 26px 13px 45px;
-  border: 1px solid black;
+  margin-left: 10px;
+  padding-top: 12px;
+  padding-right: 26px;
+  padding-bottom: 12px;
+  padding-left: 23px;
+
+
+
 }
 
 
@@ -698,53 +706,13 @@ width: 550px;
  line-height: 18px;
  color: #000;
 }
-/*.head-address {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  color: #32425c;
-}*/
+
 .aboutus {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
 }
-
-/*
-.head-btns {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
-  background-color: #ffffff;
-}
-.head-btns a:hover,
-.head-btns a:focus {
-  color: #ee3643;
-}
-
-.head-btns a:active {
-  color: #b2b2b2;
-}
-
-.login {
-  width: 121px;
-  display: block;
-  padding: 11px 26px 11px 14px;
-  margin-right: 10px;
-}
-
-.reg {
-  width: 150px;
-  display: block;
-  padding: 11px 24px;
-}*/
-
-
-
-
-
 
 .btmbtn {
   font-family: "Cuprum", Arial, sans-serif;
