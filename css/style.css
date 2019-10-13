@@ -306,38 +306,287 @@ ul.head-btn {
   padding: 0;
 }
 
+/*блок популярные товары*/
+.header-items {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-top: 53px;
+  margin-bottom: 20px;
+  background-color: #f9f5f0;
+}
+
+.popular-items {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: black;
+  margin-left: 28px;
+}
+
+.popular-items-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 253px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #ee3643;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  margin-right: 24px;
+  border-radius: 3%;
+  text-transform: uppercase;
+}
+
+.popular-items-link:hover,
+.popular-items-link:focus {
+  background-color: #ca2c37;
+
+}
+
+.popular-items-link:active {
+  background-color: #ba2732;
+}
+
+.popular {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.drill-unit {
+  border-style:solid;
+  border-color: #e5e5e5;
+  background-color: transparent;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.drill-unit:hover {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.drill-unit {
+position: relative;
+display: flex;
+flex-direction:column;
+justify-content: space-between;
+width: 218px;
+line-height: 20px;
+font-weight: bold;
+text-align: center;
+border: 1px solid #ccc;
+}
+
+.drill-unit:nth-child(3n) {
+  margin-right: 0;
+}
+
+..drill-unit {
+  font-size: 0;
+}
+
+..drill-unit {
+  font-size: 16px;
+}
+
+.drill-unit .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.drill-unit .flag-new {
+  background: url(../img/new flag.png) no-repeat 0 0;
+}
+
+.drill-unit .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.drill-unit .actions .buy,
+.drill-unit .actions .bookmark-drill {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.drill-unit .actions .bookmark-drill {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.drill-unit .actions {
+  display: none;
+}
+
+.drill-unit:hover .actions {
+  display: block;
+}
+
+.drill-unit .image {
+  width: 218px;
+  height: 168px;
+}
+
+.drill-unit .image img {
+  max-width: 100%;
+}
+
+.drill-unit .title {
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.drill-unit .catalog-item-price {
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  color: #999;
+  text-decoration: line-through;
+}
 
 
+.drill-unit .item-price-btn {
+  position: relative;
+  width: 80px;
+  margin-top: -4px;
+  margin-left: 42px;
+  margin-bottom: 20px;
+  padding: 10px 30px;
 
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
 
+.drill-unit .item-price-btn:after {
+  content: "";
 
+  position: absolute;
+  top: 0;
+  right: -20px;
 
+  width: 0;
+  height: 0;
 
+  border: 19px solid white;
+  border-left-color: #ee3643;
+}
 
+.catalog-name{
+ font-family: "PT Sans", Arial, sans-serif;
+ font-style: bold;
+ font-size:18px;
+ line-height: 20px;
+ color: #000;
+ margin: auto 25px;
+}
 
+.catalog-item-price {
+  display: flex;
+  justify-content: center;
+  margin-top: 11px 0;
+  font-family: "PT Sans", Arial, sans-serif;
+ font-style: bold;
+ font-size:17px;
+ line-height: 18px;
+ color: #999999;
+}
 
+.item-price-btn{
+  font-family: "PT Sans", Arial, sans-serif;
+ font-style: bold;
+ font-size:17px;
+ line-height: 18px;
+ color: #fff;
+ background-color: #ee3643
+}
 
+.popular-brands {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f5f0;
+}
 
+/* Сервис доставка кредит*/
 
+.service {
+ margin: 0 auto;
+ padding: 0 10px;
+ border: solid 1px red;
+ background:  #f4f8f9;
+ color: #000;
+}
 
+.container h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 28px;
+  color: #000;
+  text-transform: uppercase;
+  border: solid 1px red;
+}
 
+/* компания техномарт контакты*/
 
+.service-info {
+  display: flex;
+}
 
+.service-navigation {
+  width: 240px;
+}
 
+.service-content {
+  display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#first-button:checked ~ .service-content.delivery,
+#second-button:checked ~ .warranty,
+#third-button:checked ~ .loan {
+  display: block;
+}
 
 
 
@@ -488,16 +737,7 @@ align-items: center;
   background-color: #f2f6f8;
 }
 
-.drill-unit {
-  border-style:solid;
-  border-color: #e5e5e5;
-  background-color: transparent;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-}
 
-.drill-unit:hover {
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-}
 
 .catalog {
  width: 700px;
@@ -508,29 +748,9 @@ align-items: center;
   justify-content: space-between;
 }
 
-.catalog-name{
- font-family: "PT Sans", Arial, sans-serif;
- font-style: bold;
- font-size:18px;
- line-height: 20px;
- color: #000;
-}
-.catalog-item-price {
-  font-family: "PT Sans", Arial, sans-serif;
- font-style: bold;
- font-size:17px;
- line-height: 18px;
- color: #999999;
-}
 
-.item-price-btn{
-  font-family: "PT Sans", Arial, sans-serif;
- font-style: bold;
- font-size:17px;
- line-height: 18px;
- color: #fff;
- background-color: #ee3643
-}
+
+
 
 .filters fieldset{
   border:none;
@@ -841,18 +1061,16 @@ width: 550px;
 }
 
 
-.popular-items {
 
-  color: black;
-}
 
-.header-items {
+/*.header-items {
   display: flex;
   justify-content:space-between;
+  align-items: center;
   margin-top: 53px;
   margin-bottom: 20px;
   background-color: #f9f5f0;
-}
+}*/
 
 .container-materials {
 
@@ -966,184 +1184,20 @@ order: -4;
 
 }
 
-.popular-items-link {
 
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #fff;
-  background-color: #ee3643;
-}
 
-.popular-items-link:hover,
-.popular-items-link:focus {
-  background-color: #ca2c37;
 
-}
-
-.popular-items-link:active {
-  background-color: #ba2732;
-}
-
-a .popular-items-link{
-
-}
 
 .brand-link {
   padding-top: 12px;
-  padding-right: 52px;
   padding-bottom: 12px;
-  padding-left: 54px;
-}
 
-.popular {
-  display: flex;
-  justify-content: space-around;
-}
-
-.drill-unit {
-   position: relative;
-  display: inline-block;
-  width: 218px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-
-  line-height: 20px;
-  font-weight: bold;
-  text-align: center;
-
-  border: 1px solid #ccc;
-}
-
-.drill-unit:nth-child(3n) {
-  margin-right: 0;
-}
-
-..drill-unit {
-  font-size: 0;
-}
-
-..drill-unit {
-  font-size: 16px;
-}
-
-.drill-unit .flag {
-  position: absolute;
-  top: -1px;
-  right: -1px;
-
-  width: 60px;
-  height: 60px;
-
-  text-indent: -1000px;
-  overflow: hidden;
-  z-index: 20;
-}
-
-.drill-unit .flag-new {
-  background: url(../img/new flag.png) no-repeat 0 0;
-}
-
-.drill-unit .actions {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 218px;
-  height: 88px;
-  padding: 40px 0;
-
-  background-color: rgba(255,255,255,0.9);
-  z-index: 10;
-}
-
-.drill-unit .actions .buy,
-.drill-unit .actions .bookmark-drill {
-  display: block;
-  width: 129px;
-  margin: 0 auto;
-  margin-bottom: 7px;
-  padding: 7px 0;
-
-  background-color: #63a63e;
-  border: 3px solid #63a63e;
-  border-bottom-color: #367315;
-  border-radius:3px;
-
-  color: white;
-  font-size: 14px;
-  font-weight: normal;
-  font-family: "Cuprum", sans-serif;
-  line-height: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.drill-unit .actions .bookmark-drill {
-  color: #32425c;
-  background: white;
-  border-bottom-color: #63a63e;
-}
-
-.drill-unit .actions {
-  display: none;
-}
-
-.drill-unit:hover .actions {
-  display: block;
-}
-
-.drill-unit .image {
-  width: 218px;
-  height: 168px;
-}
-
-.drill-unit .image img {
-  max-width: 100%;
-}
-
-.drill-unit .title {
-  min-height: 40px;
-  padding: 0 25px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-}
-
-.drill-unit .catalog-item-price {
-  min-height: 20px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-
-  color: #999;
-  text-decoration: line-through;
 }
 
 
-.drill-unit .item-price-btn {
-  position: relative;
-  width: 80px;
-  margin: 10px auto;
-  margin-bottom: 20px;
-  padding: 10px 30px;
 
-  color: white;
-  background: #ee3643;
-  border-radius: 3px;
-}
 
-.drill-unit .item-price-btn:after {
-  content: "";
 
-  position: absolute;
-  top: 0;
-  right: -20px;
-
-  width: 0;
-  height: 0;
-
-  border: 19px solid white;
-  border-left-color: #ee3643;
-}
 
 .brands-box {
 
