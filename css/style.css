@@ -234,8 +234,7 @@ form {
   padding-left: 48px;
   padding-top: 12px;
   background-color: #fff;
-  /*
-  background: url(../img/icon-login.svg) no-repeat 15px;*/
+
 }
 
 .reg {
@@ -311,7 +310,7 @@ ul.head-btn {
   display: flex;
   justify-content:space-between;
   align-items: center;
-  margin-top: 53px;
+  margin-top: 33px;
   margin-bottom: 20px;
   background-color: #f9f5f0;
 }
@@ -552,11 +551,19 @@ border: 1px solid #ccc;
 /* Сервис доставка кредит*/
 
 .service {
- margin: 0 auto;
+margin-top: 66px;
+/* margin: 0 auto;*/
  padding: 0 10px;
- border: solid 1px red;
+
  background:  #f4f8f9;
  color: #000;
+}
+
+.container {
+  display: block;
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 35px;
 }
 
 .container h2 {
@@ -565,42 +572,140 @@ border: 1px solid #ccc;
   line-height: 28px;
   color: #000;
   text-transform: uppercase;
-  border: solid 1px red;
+  font-weight: normal;
+  padding-top: 62px;
+
 }
 
 /* компания техномарт контакты*/
 
 .service-info {
   display: flex;
+  margin-top: 24px;
 }
 
 .service-navigation {
   width: 240px;
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.service-navigation::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-image: url(../img/shadow.png);
 }
 
 .service-content {
   display: none;
+  padding-bottom: 110px;
 }
 
-#first-button:checked ~ .service-content.delivery,
-#second-button:checked ~ .warranty,
-#third-button:checked ~ .loan {
+#first-button:checked ~ .slider .delivery,
+#second-button:checked ~ .slider .warranty,
+#third-button:checked ~ .slider .loan {
   display: block;
 }
 
+.about-service {
+  width: 400px;
+}
+
+.service-navigation label {
+display: flex;
+    width: 217px;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+    padding: 11px 0 17px 23px;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #405069;
+    background-color: #32425c;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+
+#first-button:checked ~ .service-navigation label[for=first-button],
+#second-button:checked ~ .service-navigation label[for=second-button],
+#third-button:checked ~ .service-navigation label[for=third-button] {
+  color: #32425c;
+  background: #fff;
+
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.slider {
+  padding-top: 45px;
+  padding-left: 80px;
+  flex-grow: 1;
+}
+
+.service-content p {
+  width: 370px;
+  margin-top: -10px;
+}
+
+.delivery {
+  background-image: url(../img/delivery_van.png);
+  background-repeat: no-repeat;
+  background-position: 151px 25px;
+}
+
+.warranty {
+  background-image: url(../img/waranty.png);
+  background-repeat: no-repeat;
+  background-position: 191px 25px;
+}
+
+.loan {
+  background-image: url(../img/loan_money.png);
+  background-repeat: no-repeat;
+  background-position: 151px 25px;
+}
 
 
+.service-content h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-weight: normal;
+   letter-spacing: 0em;
+    margin: 0 0 34px 0;
+    color: #32425c;
+}
 
+.guarantee {
 
+}
 
+.btn {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 11px 44px;
+  background-color: #ff5357;
+  border-radius: 3%;
+  margin-top: 31px;
 
-
-
-
-
-
-
-
+}
 
 
 
@@ -712,7 +817,12 @@ align-items: center;
 
 
 
-
+.btn-menu {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
 
 
 
@@ -1029,7 +1139,7 @@ width: 550px;
   font-size: 16px;
   line-height: 18px;
   color: #fff;
-  border: 1px solid red;
+  padding-top: 20px;
 }
 
 .feedback {
@@ -1079,40 +1189,18 @@ width: 550px;
   order: -6;
   margin-right: 20px;
   margin-bottom: 20px;
-
+  background-image: url(../img/icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: 213px center;
   background-color: #ffbf47;
 }
 
-.container-materials svg,
-.container-delivery svg {
-position: relative;
-left: 214px;
-bottom: 20px;
+.container-materials a {
+ padding: 10px 24px;
+ background: #E5AC40;
+ border-radius: 3%;
 }
 
-.container-instruments svg {
-position: relative;
-left: 195px;
-bottom: 18px;
-}
-
-.container-tech svg {
-  position: relative;
-left: 195px;
-bottom: 18px;
-}
-
-.container-sale svg {
-  position: relative;
-left: 195px;
-bottom: 18px;
-}
-
-.container-delivery svg {
- position: relative;
-left: 195px;
-bottom: 10px;
-}
 
 
 
@@ -1134,34 +1222,99 @@ bottom: 10px;
   height: 123px;
   order: -5;
   margin-right: 20px;
-
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: 197px center;
   background-color: #3bbce3;
+}
+
+.container-instruments a {
+ padding: 10px 24px;
+ background: #35a9cc;
+ border-radius: 3%;
 }
 
 .container-tech {
   width: 300px;
   height: 123px;
-order: -4;
+  order: -4;
   background-color: #dc91d8;
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+  background-position: 191px center;
 }
 
-.conteiner-mimiwrap {
-  margin-top: -24px;
+.container-tech a {
+ padding: 10px 24px;
+ background: #C682C2;
+ border-radius: 3%;
 }
+
 
 .container-sale {
+
   order: -2;
   width: 300px;
   height: 123px;
   background-color: #8ed78f;
+  background-image: url(../img/icon-4.svg);
+  background-repeat: no-repeat;
+  background-position: 196px center;
+}
+
+.container-sale a {
+ background: #80C180;
+ border-radius: 3%;
+ padding: 11px 23px;
+
 }
 
 .container-delivery {
-  margin-top: -4px;
-  width: 300px;
-  height: 123px;
   order: -1;
   background-color: #ffc047;
+  background-image: url(../img/icon-5.svg);
+  background-repeat: no-repeat;
+  background-position: 191px center;
+  margin-bottom: 0;
+}
+
+.container-delivery a {
+padding: 10px 27px;
+ background: #E5AC40;
+ border-radius: 3%;
+ text-transform: uppercase;
+
+
+}
+
+.conteiner-item {
+display: flex;
+flex-direction: column;
+padding-left: 22px;
+padding-right: 142px;
+box-sizing: border-box;
+width: 300px;
+height: 123px;
+margin-bottom: 20px;
+padding-bottom: 22px;
+padding-top: 26px;
+}
+
+.btn-menu {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.btn-menu:hover,
+.btn-menu:focus {
+  background-color: rgba(204,204,204,0.2);
+}
+
+
+.btn-menu:active {
+  background-color: rgba(178,178,178,0.3);
 }
 
 .man-drill {
@@ -1221,20 +1374,46 @@ order: -4;
 }
 
 .socialvk {
+  display: block;
   width: 40px;
   height: 40px;
   background-color: #212a3a;
   border-radius: 50%;
   background-image: url(../img/icon-vk.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+.socialfb {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #212a3a;
+  border-radius: 50%;
+  background-image: url(../img/fb-icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.socialinst {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #212a3a;
+  border-radius: 50%;
+  background-image: url(../img/icon-insta.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .under-wrap {
   display: flex;
+  justify-content: space-between;
 }
 
 .social {
   display: flex;
   width: 136px;
+  align-items: center;
 
 }
 
@@ -1244,7 +1423,7 @@ order: -4;
 }
 
 .back-link p {
-  border:1px solid red;
+
   width: 290px;
 }
 
@@ -1257,28 +1436,13 @@ order: -4;
   min-height: 40px;
 }
 
-.btn-menu {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #fff;
-
-  border:1px solid black;
-  padding: 10px 24px;
-
-position: relative;
-left: -30px;
-bottom: 40px;
-
-}
-
 .name-menu {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
   color: #fff;
-
-  padding-left: 22px;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 
