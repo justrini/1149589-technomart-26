@@ -740,7 +740,7 @@ body {
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
-  color: #ffffff;
+  color: #000;
 
   background-color: #fff;
 }
@@ -1012,11 +1012,25 @@ width: 550px;
 
 }*/
 
-.courier{
+
+
+.courier-li {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   color: #000;
+  position: relative;
+  list-style: none;
+}
+
+.courier-li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  left: 0;
+  top: 17px;
+  background-color: #fb565a;
 }
 
 .explanation {
@@ -1206,7 +1220,12 @@ width: 550px;
 
 .before-footer {
   display: flex;
-  height: 536px;
+  margin-top: 45px;
+}
+
+.about-tech {
+  width: 535px;
+
 }
 
 .container-name {
