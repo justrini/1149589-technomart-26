@@ -26,7 +26,7 @@
                   <a class="top-btn bookmark-btn" href="#">Закладки: 0</a>
                 </li>
                 <li class="top-nav-item">
-                  <a class="top-btn cart-btn" href="#">Корзина: 0</a>
+                  <a class="top-btn cart-btn" href="#">Корзина: 10</a>
                 </li>
                 <li class="top-nav-item">
                   <a class="top-btn order-btn" href="#">Оформить заказ</a>
@@ -49,8 +49,8 @@
               <div class="accaunt">
               <a class="login-accaunt" href="#">Равшан Джамшутович</a>
               <a class="exit" href="#"></a>
-              <a class="my-orders" href="#">Мои заказы</a>
-              <a class="personal-account" href="#">Личный кабинет</a>
+              <a class="my-orders click" href="#">Мои заказы</a>
+              <a class="personal-account click" href="#">Личный кабинет</a>
             </div>
            </div>
            <ul class="site-navigation">
@@ -68,17 +68,25 @@
     </nav>
    </header>
   <main>
-  <div class="inner">
-  <div class="navigation">
-    <a class="home" href="index.html"></a>
-    <a class="catalog-tree-one" href="#">КАТАЛОГ</a>
-    <a class="catalog-tree-two" href="#">ИНСТРУМЕНТ</a>
-    <a class="catalog-tree" href="active">ПЕРФОРАТОРЫ</a>
-  </div>
-      <h2 class="drill">ПЕРФОРАТОРЫ</h2>
-      <div class="catalog-wrapper">
-      <section class="filters">
-                <form method="get" action="#">
+    <div class="inner">
+        <ul class="breadcrumbs">
+          <li>
+            <a class="home" href="index.html"></a>
+          </li>
+          <li>
+            <a class="breadcrumbs-link" href="#">КАТАЛОГ</a>
+          </li>
+          <li>
+            <a class="breadcrumbs-link" href="#">ИНСТРУМЕНТ</a>
+          </li>
+          <li>
+            <a class="breadcrumbs-link active-link" href="#">ПЕРФОРАТОРЫ</a>
+          </li>
+        </ul>
+        <h2 class="drill">ПЕРФОРАТОРЫ</h2>
+        <div class="catalog-wrapper">
+           <section class="filters">
+              <form method="get" action="#">
                 <h2 class="hidden">Фильтр:</h2>
                 <div class="price-name"> Цена:</div>
 
@@ -88,7 +96,7 @@
                 </div>
                 <div class="circle circle-left"></div>
                 <div class="circle circle-right"></div>
-              </div>
+                </div>
                 <div class="price-controls">
                 <label class="min-price"><input type="text" name="min-price" value="0"></label>
                 <span>—</span>
@@ -100,48 +108,48 @@
                    <legend>Производители:</legend>
                     <ul>
                       <li class="filter-option">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="BOSCH" checked>
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="BOSCH" checked>
                       <label for="BOSCH">BOSCH</label>
                       </li>
 
                       <li class="filter-option">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="interskol" id="interskol">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="interskol">
                       <label for="interskol">ИНТЕРСКОЛ</label>
                       </li>
 
                       <li class="filter-option">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="MAKITA" id="MAKITA" checked>
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="MAKITA" id="MAKITA" checked>
                       <label for="MAKITA">MAKITA</label>
                       </li>
 
                      <li class="filter-option">
-                     <input class="filter-input filter-input-checkbox" type="checkbox" name="  DEWALT" id="DEWALT">
+                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="  DEWALT" id="DEWALT">
                      <label for="DEWALT">DEWALT</label>
                      </li>
 
                      <li class="filter-option">
-                     <input class="filter-input filter-input-checkbox" type="checkbox" name="HITACHI" id="HITACHI">
+                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="HITACHI" id="HITACHI">
                      <label for="HITACHI">HITACHI</label>
                      </li>
                    </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class="filter-power">
                    <legend>Питание</legend>
-                      <ul>
-                       <li class="filter-option">
-                        <input class=" filter-input filter-input-checkbox" type="radio" name="power" id="Battery" checked>
-                         <label for="Battery">аккумуляторные</label>
+                      <ul class="power-filter">
+                       <li class="filter-option-power">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" id="Battery" checked>
+                         <label for="Battery">АККУМУЛЯТОРНЫЕ</label>
                        </li>
-                       <li class="filter-option">
-                        <input class=" filter-input filter-input-checkbox" type="radio" name="power" id="wall">
-                         <label for="wall">сетевые</label>
+                       <li class="filter-option-power">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" id="wall">
+                         <label for="wall">СЕТЕВЫЕ</label>
                        </li>
                       </ul>
                 </fieldset>
                 <button type="submit" class="filter-button button">
                   Показать
                 </button>
-             </form>
+              </form>
             </section>
             <div class="right-filter">
             <div class="sort-filter">
@@ -159,7 +167,7 @@
            <section class="catalog">
             <h2 hidden="">Список перфораторов</h2>
              <ul class="catalog-list">
-              <li class="drill-unit">
+               <li class="drill-unit">
                     <div class="actions">
                       <a href="#" class="buy">Купить</a>
                       <a href="#" class="bookmark-drill">В закладки</a>
@@ -183,7 +191,7 @@
                 </li>
 
 
-                  <li class="drill-unit">
+                  <li class="drill-unit new">
                     <div class="actions">
                       <a href="#" class="buy">Купить</a>
                       <a href="#" class="bookmark-drill">В закладки</a>
@@ -197,7 +205,7 @@
 
 
                <li class="drill-unit">
-                    <div class="flag flag-new">новинка</div>
+                    <div class="flag flag-new"></div>
                     <div class="actions">
                       <a href="#" class="buy">Купить</a>
                       <a href="#" class="bookmark-drill">В закладки</a>
@@ -209,7 +217,7 @@
                 <div class="item-price-btn">15500 Р.</div>
                 </li>
 
-                 <li class="drill-unit">
+                 <li class="drill-unit new">
                     <div class="actions">
                       <a href="#" class="buy">Купить</a>
                       <a href="#" class="bookmark-drill">В закладки</a>
@@ -233,8 +241,8 @@
                 <div class="item-price-btn">12500 Р.</div>
                 </li>
 
-                <li class="drill-unit">
-                    <div class="flag flag-new">новинка</div>
+                <li class="drill-unit new">
+                    <div class="flag flag-new"></div>
                     <div class="actions">
                       <a href="#" class="buy">Купить</a>
                       <a href="#" class="bookmark-drill">В закладки</a>
@@ -271,32 +279,23 @@
                 <div class="item-price-btn no-discount">12500 Р.</div>
                 </li>
              </ul>
-             <section class="pagination-list">
-             <ul>
-               <li>
-                 <a>1</a>
-               </li>
-               <li>
-                 <a href="#">2</a>
-               </li>
-               <li>
-                 <a href="#">3</a>
-               </li>
-               <li>
-                 <a href="#">СЛЕДУЮЩАЯ</a>
-               </li>
-             </ul>
+             <div class="pagination-list">
+                 <a class="pagination first">1</a>
+                 <a class="pagination second" href="#">2</a>
+                 <a class="pagination third" href="#">3</a>
+                 <a class="pagination next" href="#">СЛЕДУЮЩАЯ</a>
+              </div>
            </section>
-           </section>
-         </div>
+        </div>
        </div>
-         <div class="product-description">
+    </div>
+      <div class="product-description">
         <section class="container-perforator">
           <h2>пара слов о перфораторах</h2>
           <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </section>
       </div>
-           </main>
+ </main>
          <footer>
             <nav>
               <div class="footer">
