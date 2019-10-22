@@ -526,14 +526,138 @@ padding-top: 26px;
   background-color: rgba(178,178,178,0.3);
 }
 
-.man-drill {
+/*.man-drill {
   background-image: url('../img/Drill-man-baner-.png');
   background-color: #685c53;
   margin-right: 20px;
   width: 620px;
   order: -3;
   height: 266px;
+}*/
+
+.contaoner-slider {
+  width: 620px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
+
+.slider-item {
+  display: none;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+  background-image: url(../img/);
+}
+
+.slider-item h3 {
+  margin: 0;
+  margin-bottom: 13px;
+  max-width: 220px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.slider-item p {
+  max-width: 220px;
+  margin: 0;
+  margin-bottom: 124px;
+}
+
+.slider-btn {
+  display: block;
+  width: 195px;
+  padding: 14px 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #ee3643;
+  border-radius: 3px;
+  border: none;
+}
+
+.slider-btn:hover,
+.slider-btn:focus {
+  background-color: #ca2c37;
+}
+
+.slider-btn:active {
+  background-color: #ba2732;
+}
+
+
+.slider-top {
+  position: relative;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-controls i {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.slider-controls i::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #ee3643;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(50%);
+}
+
+.slider-controls .active::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
+  width: 6px;
+  height: 6px;
+  margin: -4px;
+
+  background-color: inherit;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+
+
+
 
 /*блок популярные товары*/
 .header-items {
