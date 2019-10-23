@@ -93,17 +93,23 @@
           <section class="slider-top">
             <div class="container-slider">
               <h2 class="visually-hidden">Каталог дрелей и перфораторов</h2>
+              <input class="visually-hidden" type="radio" id="product-1" name="toggle">
+              <input class="visually-hidden" type="radio" id="product-2" name="toggle" checked>
               <div class="slider-controls">
-                  <i class="active"></i>
+              <label class="slider-controls-item slider-controls-impact" for="product-1"></label>
+              <label class="slider-controls-item slider-controls-drill" for="product-2"></label>
+            </div>
+              <div class="slider-controls">
                   <i></i>
+                  <i class="active"></i>
               </div>
             <ul class="slider-list">
-          <li class="slider-item">
+          <li class="slider-item item-impact">
             <h3>ПЕРФОРАТОРЫ</h3>
             <p>Настоящие мужские игрушки</p>
             <a class="slider-btn" href="#">ОТКРЫТЬ КАТАЛОГ</a>
           </li>
-          <li class="slider-item">
+          <li class="slider-item item-drill">
             <h3>ДРЕЛИ</h3>
             <p>Соседям на радость!</p>
             <a class="slider-btn" href="#">ОТКРЫТЬ КАТАЛОГ</a>
@@ -112,14 +118,14 @@
           </div>
          </section>
           <div class="conteiner-mimiwrap">
-          <div class="container-sale conteiner-item">
-            <p class="name-menu">Скидки 50%</p>
-            <a class="btn-menu" href="#">НА 350 ТОВАРОВ</a>
-          </div>
-          <div class="container-delivery conteiner-item">
-            <p class="name-menu">Доставка</p>
-            <a class="btn-menu" href="#">БЕСПЛАТНО</a>
-          </div>
+            <div class="container-sale conteiner-item">
+              <p class="name-menu">Скидки 50%</p>
+              <a class="btn-menu" href="#">НА 350 ТОВАРОВ</a>
+            </div>
+            <div class="container-delivery conteiner-item">
+              <p class="name-menu">Доставка</p>
+              <a class="btn-menu" href="#">БЕСПЛАТНО</a>
+            </div>
          </div>
         </div>
      </nav>
@@ -131,7 +137,7 @@
        </div>
 
        <div class="popular">
-        <div class="drill-unit">
+                <div class="drill-unit">
                     <div class="actions">
                       <a href="#" class="buy">Купить</a>
                       <a href="#" class="bookmark-drill">В закладки</a>
@@ -143,7 +149,7 @@
                 <div class="item-price-btn">25500 Р.</div>
                </div>
 
-        <div class="drill-unit">
+               <div class="drill-unit">
                     <div class="actions">
                       <a href="#" class="buy">Купить</a>
                       <a href="#" class="bookmark-drill">В закладки</a>
@@ -155,7 +161,7 @@
                 <div class="item-price-btn">15500 Р.</div>
                </div>
 
-        <div class="drill-unit">
+                <div class="drill-unit">
                     <div class="actions">
                       <a href="#" class="buy">Купить</a>
                       <a href="#" class="bookmark-drill">В закладки</a>
@@ -167,7 +173,7 @@
                 <div class="item-price-btn">25  500 Р.</div>
                </div>
 
-         <div class="drill-unit new">
+                <div class="drill-unit new">
                     <div class="actions">
                       <a href="#" class="buy">Купить</a>
                       <a href="#" class="bookmark-drill">В закладки</a>
@@ -188,15 +194,15 @@
        </div>
 
        <div class="brands">
-        <div class="brands-box"><a href="#"><img src="img/bosch.png" alt="Логотип фирмы Bosch"></a></div>
-        <div class="brands-box"><a href="#"><img src="img/Makita.png" alt="Логотип фирмы Makita"></a></div>
-        <div class="brands-box"><a href="#"><img src="img/DeWALT.png" alt="Логотип фирмы Dewalt"></a></div>
-        <div class="brands-box"><a href="#"><img src="img/Интерскол.png" alt="Логотип фирмы Интерскол"></a></div>
-        <div class="brands-box"><a href="#"><img src="img/Hitachi.png" alt="Логотип фирмы Hitachi.png"></a></div>
-        <div class="brands-box"><a href="#"><img src="img/LG.png" alt="Логотип фирмы LG"></a></div>
-        <div class="brands-box"><a href="#"><img src="img/AEG.png" alt="Логотип фирмы AEG"></a></div>
-        <div class="brands-box"><a href="#"><img src="img/Metabo.png" alt="Логотип фирмы Metabo"></a>
-        </div>
+          <div class="brands-box"><a href="#"><img src="img/bosch.png" alt="Логотип фирмы Bosch"></a></div>
+          <div class="brands-box"><a href="#"><img src="img/Makita.png" alt="Логотип фирмы Makita"></a></div>
+          <div class="brands-box"><a href="#"><img src="img/DeWALT.png" alt="Логотип фирмы Dewalt"></a></div>
+          <div class="brands-box"><a href="#"><img src="img/Интерскол.png" alt="Логотип фирмы Интерскол"></a></div>
+          <div class="brands-box"><a href="#"><img src="img/Hitachi.png" alt="Логотип фирмы Hitachi.png"></a></div>
+          <div class="brands-box"><a href="#"><img src="img/LG.png" alt="Логотип фирмы LG"></a></div>
+          <div class="brands-box"><a href="#"><img src="img/AEG.png" alt="Логотип фирмы AEG"></a></div>
+          <div class="brands-box"><a href="#"><img src="img/Metabo.png" alt="Логотип фирмы Metabo"></a>
+          </div>
        </div>
      </section>
        <div class="service">
@@ -205,9 +211,9 @@
           <p class="about-service">Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
           <div class="service-info">
-            <input type="radio" id="first-button" name="navigation" class="visually-hidden" checked>
-            <input type="radio" id="second-button" name="navigation" class="visually-hidden">
-            <input type="radio" id="third-button" name="navigation" class="visually-hidden">
+            <input class="visually-hidden" type="radio" id="first-button" name="navigation"  checked>
+            <input class="visually-hidden" type="radio" id="second-button" name="navigation">
+            <input class="visually-hidden" type="radio" id="third-button" name="navigation">
            <div class="service-navigation">
               <label for="first-button">доставка</label>
               <label for="second-button">гарантия</label>
