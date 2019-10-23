@@ -570,8 +570,8 @@ padding-top: 26px;
 .slider-controls label::after {
   content: "";
   position: absolute;
-  top:24px;
-  left: 24px;
+  top:50%;
+  left: 50%;
   width: 10px;
   height: 10px;
   background: green;
@@ -716,8 +716,6 @@ padding-top: 26px;
   z-index: 3;
   border-radius: 50%;
 background-color: #ee3643; /*указатель активной кнопки*/
-
-
 }
 
 
@@ -1414,14 +1412,55 @@ width: 550px;
   color: #ffd180;
 }
 
+.modal {
+  position: absolute;
+
+  background-color: #fff;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal-form {
+  width: 620px;
+  bottom: -180%;
+  left: 40%;
+  padding-top:49px;
+  padding-bottom: 37px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 11px;
+  right: 8px;
+  width: 21px;
+  height: 21px;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  top: 10px;
+  left: 2px;
+  position: absolute;
+background-color: #ee3643;
+  width: 19px;
+  height: 3px;
 
 
+}
 
+.modal-close::before {
+  transform: rotate(45deg);
+}
 
-
-
-
-
+.modal-close::after {
+  transform: rotate(-45deg);
+}
 
 
 
