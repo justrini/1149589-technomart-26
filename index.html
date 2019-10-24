@@ -319,32 +319,48 @@
             </nav>
      </footer>
 
-                 <section class="modal modal-form">
-                  <button class="modal-close" type="button">
-                    <span class="visually-hidden">Закрыть</span>
-                  </button>
-                 <h2 class="visually-hidden">Свяжитесь с нами</h2>
-                          <form action="https://echo.htmlacademy.ru" method="post">
-                            <p>
-                              <label for="form-name">
-                                   Ваше имя:
-                               </label>
-                                <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
-                            </p>
-                            <p>
-                              <label for="form-email">
-                                Ваш e-mail:
-                              </label>
-                               <input id="form-email" type="text" name="email" placeholder="email@example.com">
-                            </p>
-                            <p>
-                              <label for="form-fillform">
-                               Текст письма:
-                              </label>
-                            <input id="form-fillform" type="text" name="fillform" placeholder="В свободной форме">
-                            </p>
-                            <button type="submit">Отправить</button>
-                          </form>
-                        </section>
+    <section class="modal modal-form">
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <h2 class="visually-hidden">Свяжитесь с нами</h2>
+            <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="form-text">
+              <div class="form-wrapper">
+              <div class="name-form">
+                <h3>Ваше имя:</h3>
+                <label class="visually-hidden" for="form-name">
+                     Ваше имя:
+                 </label>
+                  <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+              </div>
+              <div class="email-form">
+                <h3>Ваш e-mail</h3>
+                <label class="visually-hidden" for="form-email">
+                  Ваш e-mail:
+                </label>
+                 <input id="form-email" type="text" name="email" placeholder="email@example.com">
+              </div>
+             </div>
+              <div>
+                <h3>Текст письма</h3>
+                <label class="visually-hidden" for="form-fillform">
+                 Текст письма:
+                </label>
+              <input class="text-form" id="form-fillform" type="text" name="fillform" placeholder="В свободной форме">
+              </div>
+             </div>
+              <div class="submit-btn">
+              <button class="submit-form" type="submit">Отправить</button>
+              </div>
+            </form>
+          </section>
+     <section class="modal modal-map">
+  <h2 class="visually-hidden">Как до нас добраться</h2>
+  <p><img src="img/" width="780" height="560" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/18 "></p>
+  <button class="modal-close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+</section>
  </body>
 </html>
