@@ -16,7 +16,6 @@ a {
 }
 
 ul.top-nav-list,
-ul.social,
 ul.site-navigation1,
 ul.site-navigation2 {
   list-style: none;
@@ -224,6 +223,52 @@ form {
   opacity: 0.3;
 }
 
+.cart-added {
+  position: relative;
+  display: block;
+  padding-left: 49px;
+  padding-bottom: 14px;
+  padding-top: 11px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #ee3643;
+  text-decoration: none;
+}
+
+.cart-added::before {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 16px;
+  background: url(../img/icon-cart.svg);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.cart-added:hover,
+.cart-added:focus {
+  background-color: #ca2c37;
+}
+
+.cart-added:hover::before,
+.cart-added:focus::before {
+  opacity: 1;
+}
+
+.cart-added:active {
+  color: #999ca1;
+  background-color: #ba2732;
+}
+
+.cart-added:active::before {
+  opacity: 0.3;
+}
+
 .main-header-bg {
   background-color: #f4f7f9;
 }
@@ -336,16 +381,16 @@ form {
 
 .site-navigation {
   font-family: Cuprum, Arial, sans-serif;
-  line-height: 24px;
+  line-height: 25px;
   background-color: #32425c;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 17px;
-  margin-top: 41px;
+  margin-top: 42px;
   margin-bottom: 60px;
   padding: 16px 30px 15px;
-  border-bottom: 5px solid #293449;
+  border-bottom: 4px solid #293449;
 }
 
 .site-navigation a {
@@ -370,7 +415,6 @@ ul.site-navigation {
 }
 
 ul.top-nav-list,
-ul.social,
 ul.site-navigation1,
 ul.site-navigation2 {
   list-style: none;
@@ -382,8 +426,8 @@ ul.site-navigation2 {
   display: flex;
   flex-wrap: wrap;
   margin-top: 59px;
+  margin-bottom: 52px;
   padding: 0;
-  border: 940px 410px;
 }
 
 .container-materials {
@@ -420,10 +464,10 @@ ul.site-navigation2 {
 .name-menu {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 21px;
   color: #fff;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .btn-menu {
@@ -496,19 +540,6 @@ ul.site-navigation2 {
   background: #e5ac40;
   border-radius: 3%;
   text-transform: uppercase;
-}
-
-.conteiner-item {
-  display: flex;
-  flex-direction: column;
-  padding-left: 22px;
-  padding-right: 142px;
-  box-sizing: border-box;
-  width: 300px;
-  height: 123px;
-  margin-bottom: 20px;
-  padding-bottom: 22px;
-  padding-top: 26px;
 }
 
 .btn-menu {
@@ -602,18 +633,18 @@ ul.site-navigation2 {
   padding: 0;
   padding-top: 26px;
   padding-left: 24px;
-  margin-bottom: 13px;
   max-width: 220px;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 33px;
+  line-height: 27px;
   font-weight: bold;
   color: #fff;
 }
 
 .slider-item p {
   max-width: 300px;
-  margin-top: 25px;
-  margin-bottom: 100px;
+  margin-top: 8px;
+  margin-left: 23px;
+  margin-bottom: 123px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -682,13 +713,11 @@ ul.site-navigation2 {
 
 .slider-controls {
   position: absolute;
-  left: 24%;
-  bottom: 55px;
+  left: 23%;
+  bottom: 39px;
   z-index: 100;
-
   width: 160px;
   height: 18px;
-
   text-align: center;
   font-size: 0;
   transform: translateX(50%);
@@ -721,7 +750,8 @@ ul.site-navigation2 {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
-  color: black;
+  color: #32425c;
+  font-weight: normal;
   margin-left: 28px;
 }
 
@@ -754,7 +784,7 @@ ul.site-navigation2 {
 .popular {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 0;
 }
 
 .drill-unit {
@@ -766,7 +796,7 @@ ul.site-navigation2 {
   display: flex;
   flex-direction: column;
   width: 219px;
-  line-height: 19px;
+  line-height: 17px;
   font-weight: bold;
   text-align: center;
   border: 1px solid #ccc;
@@ -785,11 +815,9 @@ ul.site-navigation2 {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 218px;
   height: 88px;
   padding: 40px 0;
-
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 10;
 }
@@ -801,12 +829,10 @@ ul.site-navigation2 {
   margin: 0 auto;
   margin-bottom: 7px;
   padding: 7px 0;
-
   background-color: #63a63e;
   border: 3px solid #63a63e;
   border-bottom-color: #367315;
   border-radius: 3px;
-
   color: white;
   font-size: 14px;
   font-weight: normal;
@@ -866,9 +892,10 @@ ul.site-navigation2 {
 }
 
 .drill-unit .catalog-item-price {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   color: #999;
   text-decoration: line-through;
+  font-size: 16px;
 }
 
 .drill-unit .item-price-btn {
@@ -876,9 +903,8 @@ ul.site-navigation2 {
   width: 80px;
   margin-top: auto;
   margin-left: 42px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding: 10px 30px;
-
   color: white;
   background: #ee3643;
   border-radius: 3px;
@@ -918,16 +944,16 @@ ul.site-navigation2 {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 23px;
   color: #000;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   padding: 0 31px;
 }
 
 .item-price-btn {
   font-family: "PT Sans", Arial, sans-serif;
-  font-style: bold;
+  font-weight: bold;
   font-size: 17px;
   line-height: 18px;
   color: #fff;
@@ -939,14 +965,13 @@ ul.site-navigation2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
   margin-bottom: 20px;
   background-color: #f9f5f0;
 }
 
 .brand-link {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .brands-box {
@@ -954,7 +979,7 @@ ul.site-navigation2 {
   align-items: center;
   justify-content: center;
   width: 220px;
-  height: 145px;
+  height: 142px;
   border: 1px solid #eaeaea;
   cursor: pointer;
 }
@@ -977,14 +1002,14 @@ ul.site-navigation2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 67px;
 }
 
 /* Сервис доставка кредит*/
 
 .service {
-  margin-top: 66px;
+  margin-bottom: 104px;
   padding: 0 10px;
-
   background: #f4f8f9;
   color: #000;
 }
@@ -997,7 +1022,7 @@ ul.site-navigation2 {
 .container h2 {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
-  line-height: 28px;
+  line-height: 35px;
   color: #000;
   text-transform: uppercase;
   font-weight: normal;
@@ -1035,6 +1060,20 @@ ul.site-navigation2 {
   height: 100%;
 }
 
+.delivery-slide {
+  width: 275px;
+}
+
+.guarantee {
+  width: 375px;
+}
+
+.credit {
+  width: 280px;
+  margin-bottom: 40px;
+}
+
+
 #first-button:checked ~ .slider .delivery,
 #second-button:checked ~ .slider .warranty,
 #third-button:checked ~ .slider .loan {
@@ -1044,10 +1083,10 @@ ul.site-navigation2 {
 .service-navigation label {
   display: flex;
   width: 217px;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 30px;
-  font-weight: bold;
-  padding: 11px 0 17px 23px;
+  font-weight: normal;
+  padding: 11px 0 18px 23px;
   border-bottom: 1px solid #293449;
   border-top: 1px solid #405069;
   background-color: #32425c;
@@ -1077,11 +1116,6 @@ ul.site-navigation2 {
   padding-top: 45px;
   padding-left: 80px;
   flex-grow: 1;
-}
-
-.service-content p {
-  width: 370px;
-  margin-top: -10px;
 }
 
 .delivery {
@@ -1138,16 +1172,19 @@ ul.site-navigation2 {
 /*до футера*/
 .before-footer {
   display: flex;
-  margin-top: 45px;
 }
 
 .about-tech {
   width: 535px;
+  line-height: 25px;
 }
 
 .company {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -1161,7 +1198,7 @@ ul.site-navigation2 {
 
 .about-tech .post {
   width: 400px;
-  margin-top: 25px;
+  margin-top: 19px;
 }
 
 .courier li {
@@ -1198,12 +1235,12 @@ ul.site-navigation2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 3%;
+  border-radius: 3px;
   width: 220px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 86px;
-  margin-top: 24px;
+  margin-top: 26px;
 }
 
 .btmbtn:hover,
@@ -1222,7 +1259,7 @@ ul.site-navigation2 {
 .explanation {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 22px;
   color: #000;
   width: 190px;
 }
@@ -1236,12 +1273,12 @@ ul.site-navigation2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 3%;
+  border-radius: 3px;
   width: auto;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 86px;
-  margin-top: 32px;
+  margin-top: 33px;
 }
 
 .lost-btn:hover,
@@ -1261,7 +1298,6 @@ ul.site-navigation2 {
 
 .footer-wrapper {
   display: flex;
-  flex-direction: ;
 }
 
 .logo-btm {
@@ -1272,7 +1308,7 @@ ul.site-navigation2 {
   color: #fff;
   font-size: 30px;
   padding-top: 20px;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   width: 220px;
   position: relative;
   background-color: #ee3643;
@@ -1292,7 +1328,7 @@ ul.site-navigation2 {
   position: absolute;
   content: "";
   width: 100%;
-  height: 5px;
+  height: 6px;
   left: 0;
   bottom: -5px;
   background-color: #b52933;
@@ -1308,7 +1344,7 @@ ul.site-navigation2 {
 }
 
 .nav-block {
-  margin-left: 70px;
+  margin-left: 60px;
   background-color: #32425c;
 }
 
@@ -1317,7 +1353,7 @@ ul.site-navigation2 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
-  width: 550px;
+  width: 547px;
 }
 
 .site-navigation1 li {
@@ -1327,6 +1363,7 @@ ul.site-navigation2 {
 .site-navigation2 {
   display: flex;
   justify-content: space-around;
+  width: 574px;
 }
 
 .site-navigation2 li {
@@ -1381,9 +1418,10 @@ ul.site-navigation2 {
   width: 250px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 19px;
   color: #fff;
   padding-top: 20px;
+  margin-bottom: 36px;
 }
 
 .social {
@@ -1391,8 +1429,8 @@ ul.site-navigation2 {
   width: 136px;
   align-items: center;
   justify-content: space-between;
-  margin-left: -35px;
-  margin-top: 15px;
+  padding: 0;
+  margin-left: 18px;
 }
 
 .social-link {
@@ -1426,6 +1464,8 @@ ul.site-navigation2 {
 .back-link {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 298px;
 }
 
 .feedback {
@@ -1437,8 +1477,21 @@ ul.site-navigation2 {
   width: 140px;
 }
 
-.feedback a {
+.feedback a,
+.feedback-info a {
   color: #ffd180;
+}
+
+.feedback a:focus,
+.feedback a:hover,
+.feedback-info a:focus,
+.feedback-info a:hover {
+  text-decoration: underline;
+}
+
+.feedback a:active,
+.feedback-info a:active {
+  color: #ee3643;
 }
 
 .feedback-info {
@@ -1450,9 +1503,6 @@ ul.site-navigation2 {
   width: 100px;
 }
 
-.feedback-info a {
-  color: #ffd180;
-}
 
 .modal {
   position: fixed;
@@ -1646,7 +1696,7 @@ ul.site-navigation2 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 5px;
+  padding-top: 4px;
   list-style: none;
   margin-left: 14px;
 }
@@ -1676,7 +1726,7 @@ ul.site-navigation2 {
 }
 
 .drill {
-  padding-left: 32px;
+  padding-left: 28px;
   padding-top: 34px;
   padding-bottom: 29px;
   font-family: "Cuprum", Arial, sans-serif;
@@ -1684,13 +1734,14 @@ ul.site-navigation2 {
   line-height: 30px;
   color: #32425c;
   background-color: #f2f6f8;
-  margin: 0 0 28px 0;
+  margin: 0 0 24px 0;
+  font-weight: normal;
 }
 
 .catalog-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 93px;
+  margin-bottom: 24px;
 }
 
 .filters fieldset {
@@ -1716,7 +1767,6 @@ legend {
   font-size: 17px;
   line-height: 30px;
   color: #000;
-  margin-bottom: 20px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -1765,6 +1815,15 @@ fieldset:first-child {
   margin: 0;
   list-style: none;
   min-height: 40px;
+}
+
+.pagination:hover,
+.pagination:focus {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination:active {
+  border: 1px solid #ee3643;
 }
 
 .accaunt {
@@ -1851,6 +1910,7 @@ fieldset:first-child {
 }
 
 .product-description {
+  padding-top: 40px;
   background-color: #f2f6f8;
 }
 
@@ -2106,7 +2166,7 @@ span {
 
 .active .type .functional:focus {
   color: red;
-  text-transform: underline;
+  text-decoration: underline;
 }
 
 .triangle {
@@ -2204,7 +2264,7 @@ span {
 }
 
 .map-info {
-  margin-left: 110px;
+  margin-left: 105px;
 }
 
 .bookmark {
@@ -2222,10 +2282,7 @@ span {
   background-color: #ee3643;
 }
 
-.before-footer {
-  display: flex;
-  margin-top: 45px;
-}
+
 
 .about-tech {
   width: 535px;
