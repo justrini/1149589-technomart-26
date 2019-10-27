@@ -1,13 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-
+  min-width: 940px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   color: #000;
-
   background-color: #fff;
 }
 
@@ -39,7 +38,7 @@ img {
 }
 
 .inner {
-  max-width: 940px;
+  width: 940px;
   margin: 0 auto;
 }
 
