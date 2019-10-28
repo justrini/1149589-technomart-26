@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -794,7 +795,7 @@ ul.site-navigation2 {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 218px;
+  width: 23.5%;
   line-height: 17px;
   font-weight: bold;
   text-align: center;c
@@ -982,7 +983,7 @@ ul.site-navigation2 {
 .brands-box {
   display: flex;
   justify-content: center;
-  width: 220px;
+  width: 23%;
   height: 144px;
   border: 1px solid #eaeaea;
   cursor: pointer;
@@ -1016,7 +1017,7 @@ ul.site-navigation2 {
 
 .service {
   margin-bottom: 104px;
-  padding: 0 10px;
+  padding: 0;
   background: #f4f8f9;
   color: #000;
 }
@@ -1130,19 +1131,19 @@ ul.site-navigation2 {
 .delivery {
   background-image: url(../img/delivery-van.png);
   background-repeat: no-repeat;
-  background-position: 151px 25px;
+  background-position: 99% 25px;
 }
 
 .warranty {
   background-image: url(../img/waranty.png);
   background-repeat: no-repeat;
-  background-position: 191px 25px;
+  background-position: 76% 25px;
 }
 
 .loan {
   background-image: url(../img/loan-money.png);
   background-repeat: no-repeat;
-  background-position: 151px 25px;
+  background-position: 76% 25px;
 }
 
 .service-content h3 {
@@ -1355,8 +1356,9 @@ ul.site-navigation2 {
 }
 
 .nav-block {
-  /*margin-left: 60px;*/
+  margin-left: 60px;
   background-color: #32425c;
+  flex-grow: 1;
 }
 
 .site-navigation1 {
@@ -1364,17 +1366,22 @@ ul.site-navigation2 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
-  width: 547px;
+
 }
 
 .site-navigation1 li {
   padding-top: 39px;
 }
 
+ul.site-navigation2 {
+  padding-left: 20px;
+
+}
+
 .site-navigation2 {
   display: flex;
-  justify-content: space-around;
-  width: 574px;
+  justify-content: space-between;
+
 }
 
 .site-navigation2 li {
