@@ -977,7 +977,6 @@ ul.site-navigation2 {
 
 .brands-box:hover,
 .brands-box:focus {
-  opacity: 30%;
   box-shadow: -2px -1px 20px 0px rgba(0, 0, 0, 0.35);
 }
 
@@ -1487,6 +1486,7 @@ ul.site-navigation2 {
 .feedback a:active,
 .feedback-info a:active {
   color: #ee3643;
+  text-decoration: none;
 }
 
 .feedback-info {
