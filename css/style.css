@@ -143,7 +143,7 @@ img {
 }
 
 .top-btn:active::before {
- opacity: 0.3;
+  opacity: 0.3;
 }
 
 .order-btn {
@@ -498,7 +498,7 @@ ul.site-navigation2 {
 }
 
 .container-delivery {
-   margin-bottom: 0;
+  margin-bottom: 0;
   order: -1;
   background-color: #ffc047;
   background-image: url(../img/icon-5.svg);
@@ -1195,8 +1195,8 @@ ul.site-navigation2 {
 .courier-li::before {
 
   position: absolute;
-   content: "";
-   left: -36px;
+  content: "";
+  left: -36px;
   top: 16px;
   width: 25px;
   height: 2px;
@@ -1204,13 +1204,13 @@ ul.site-navigation2 {
 }
 
 .btmbtn {
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 220px;
   margin-top: 23px;
-   margin-bottom: 86px;
-    padding-top: 10px;
+  margin-bottom: 86px;
+  padding-top: 10px;
   padding-bottom: 10px;
   font-family: Cuprum, Arial, sans-serif;
   font-size: 14px;
@@ -1284,7 +1284,7 @@ display: flex;
   justify-content: center;
   align-items: center;
   width: 220px;
-padding-top: 20px;
+  padding-top: 20px;
   padding-bottom: 20px;
   font-family: Cuprum, Arial, sans-serif;
   color: #fff;
@@ -1396,7 +1396,7 @@ ul.site-navigation2 {
 
 .copyright {
   width: 250px;
-margin-bottom: 31px;
+  margin-bottom: 31px;
   padding-top: 16px;
   font-family: Cuprum, Arial, sans-serif;
   font-size: 16px;
@@ -1497,7 +1497,7 @@ margin-bottom: 31px;
 .modal-form {
   top: 20%;
   left: 30%;
- width: 620px;
+  width: 620px;
   box-sizing: border-box;
 }
 
@@ -1563,7 +1563,7 @@ margin-bottom: 31px;
 .contact-form input[type="text"] {
   width: 220px;
   margin-right: 20px;
-   padding-left: 14px;
+  padding-left: 14px;
   font: inherit;
   color: #a9a9a9;
   box-sizing: border-box;
@@ -1612,7 +1612,7 @@ margin-bottom: 31px;
 
 .modal-map {
   position: fixed;
-   top: 50%;
+  top: 50%;
   left: 43%;
   z-index: 2000;
   display: none;
@@ -1769,7 +1769,7 @@ ul {
 }
 
 .filter-button {
-   padding: 10px 38px;
+  padding: 10px 38px;
   font-family: PT Sans, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -1864,7 +1864,7 @@ ul {
 }
 
 .my-orders::after {
-position: absolute;
+  position: absolute;
   content: "";
   top: 7px;
   right: 14px;
@@ -1906,7 +1906,7 @@ position: absolute;
 }
 
 .container-perforator {
-   max-width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   padding: 0 10px;
   padding-bottom: 67px;
@@ -2229,8 +2229,8 @@ position: absolute;
 
 .cart-btns-wrapper {
   display: flex;
-   justify-content: space-around;
-   width: 100%;
+  justify-content: space-around;
+  width: 100%;
   padding-top: 35px;
   padding-bottom: 35px;
   background-color: #f1f1f1;
