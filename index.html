@@ -11,7 +11,7 @@
     href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,700&display=swap&subset=cyrillic-ext"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/stylemin.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -389,11 +389,12 @@
           </div>
         </div>
         <div>
-          <h3>Текст письма</h3>
+          <h3>Текст письма:</h3>
           <label class="visually-hidden" for="form-fillform">
             Текст письма:
           </label>
-          <input class="text-form" id="form-fillform" type="text" name="fillform" placeholder="В свободной форме">
+          <textarea class="text-form" id="form-fillform" name="fillform" placeholder="В свободной форме" required spellcheck="false">
+          </textarea>
         </div>
       </div>
       <div class="submit-btn">
