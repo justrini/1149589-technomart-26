@@ -1486,7 +1486,7 @@ ul.site-navigation2 {
 
 .modal {
   position: fixed;
-  /*display: none;*/
+  display: none;
   z-index: 1000;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   background-color: #fff;
@@ -1574,12 +1574,9 @@ ul.site-navigation2 {
   border-color: #663d15;
 }
 
-/*.text-form {
-  margin-bottom: 37px;
-  padding-top: 12px;
-  padding-bottom: 90px;
-  padding-right: 300px;
-}*/
+.contact-form textarea:focus {
+  border-color: #663d15;
+}
 
 .text-form {
   width: 428px;
@@ -2213,7 +2210,7 @@ ul {
 
 .modal-cart {
   position: fixed;
-  display: none;
+  /*display: none;*/
   z-index: 2000;
   top: 83%;
   left: 57%;
@@ -2222,6 +2219,7 @@ ul {
   margin-top: -280px;
   margin-left: -390px;
   background-color: #fff;
+  box-shadow: 0px 10px 30px rgba(0,0,0,.7);
 }
 
 .cart-wrapper {
