@@ -1495,7 +1495,7 @@ ul.site-navigation2 {
 }
 
 .modal-form {
-  top: 20%;
+  top: 32%;
   left: 30%;
   width: 620px;
   box-sizing: border-box;
@@ -1538,7 +1538,7 @@ ul.site-navigation2 {
   flex-wrap: wrap;
   box-sizing: border-box;
   width: 620px;
-  padding-top: 49px;
+  padding-top: 40px;
   padding-left: 80px;
   padding-right: 80px;
 }
@@ -1563,11 +1563,14 @@ ul.site-navigation2 {
 .contact-form input[type="text"] {
   width: 220px;
   margin-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 14px;
   font: inherit;
   color: #a9a9a9;
   box-sizing: border-box;
   border: 2px solid #dee3e4;
+  border-radius: 3px;
 }
 
 .contact-form input:focus {
@@ -1582,18 +1585,33 @@ ul.site-navigation2 {
   width: 428px;
   height: 102px;
   padding: 8px 14px 0;
-  margin-top: 8px;
   margin-bottom: 33px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
 }
 
+.name-form h3 {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.email-form h3 {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.text-area h3 {
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 7px;
+  padding: 0;
+}
 .submit-form {
   display: inline-block;
   vertical-align: top;
   vertical-align: middle;
   width: 460px;
-  padding: 11px 0;
+  padding: 8px 0;
   font: inherit;
   text-align: center;
   color: #fff;
@@ -2210,7 +2228,7 @@ ul {
 
 .modal-cart {
   position: fixed;
-  /*display: none;*/
+  display: none;
   z-index: 2000;
   top: 83%;
   left: 57%;
@@ -2237,7 +2255,6 @@ ul {
 
 .cart-btns-wrapper {
   display: flex;
-  justify-content: space-around;
   width: 100%;
   padding-top: 35px;
   padding-bottom: 35px;
@@ -2270,11 +2287,16 @@ ul {
 .cart-order-first {
   color: #fff;
   background-color: #ee3643;
+  margin-left: 80px;
 }
+
+.cart-order-first:hover,
+.cart-order-first:focus
 
 .cart-order-second {
   color: #000;
   background-color: #fff;
+  margin-left: 20px;
 }
 
 .expedition-list {
