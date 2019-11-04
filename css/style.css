@@ -54,6 +54,7 @@ img {
   font-size: 24px;
   text-align: center;
   background-color: #ee3643;
+  cursor: pointer;
   color: #fff;
 }
 
@@ -353,6 +354,7 @@ img {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 42px;
@@ -731,6 +733,7 @@ ul.site-navigation2 {
 
 .popular-items-link {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 253px;
@@ -1818,7 +1821,10 @@ ul {
 
 .pagination-list {
   min-height: 40px;
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 285px;
+  margin: 30px 0 32px 0;
   padding: 0;
   color: #000;
   list-style: none;
@@ -2057,6 +2063,10 @@ ul {
   padding-left: 33px;
 }
 
+.filter-option:active {
+  display: flex;
+}
+
 .filter-option label {
   position: relative;
   cursor: pointer;
@@ -2142,6 +2152,7 @@ ul {
 
 .sort-type {
   display: flex;
+
   justify-content: space-between;
   width: 355px;
   margin-left: 137px;
@@ -2192,13 +2203,6 @@ ul {
   width: 11px;
   height: 10px;
   background-image: url(../img/icon-down-dir.svg);
-}
-
-.pagination-list {
-  display: flex;
-  justify-content: space-between;
-  width: 285px;
-  margin: 33px 0 30px 0;
 }
 
 .pagination-list a {
