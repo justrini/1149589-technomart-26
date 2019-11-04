@@ -2273,6 +2273,12 @@ ul {
   font-weight: normal;
 }
 
+.cart-order-second {
+  color: #000;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
 .cart-order-btn {
   display: flex;
   justify-content: center;
@@ -2285,22 +2291,12 @@ ul {
   font-weight: normal;
   text-transform: uppercase;
   border-radius: 4px;
-
 }
 
 .cart-order-first {
   color: #fff;
   background-color: #ee3643;
   margin-left: 80px;
-}
-
-.cart-order-first:hover,
-.cart-order-first:focus
-
-.cart-order-second {
-  color: #000;
-  background-color: #fff;
-  margin-left: 20px;
 }
 
 .expedition-list {
